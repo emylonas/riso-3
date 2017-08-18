@@ -1,2 +1,0 @@
-#!/bin/shi
-GIT_WORK_TREE=/var/www/html/cds/garibaldi/ git checkout -f
