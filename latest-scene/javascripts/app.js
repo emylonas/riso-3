@@ -243,8 +243,8 @@ $(document).ready(function(e) {
     scenesRSdata.goTo(newState.scene-1);
     if(location.hash.indexOf('resources') != -1)
       mainRSData.goTo(2);
-    //  $("#resources").fadeOut(400, function(){loadResources(sceneIndex);});
-    
+    $("#resources").fadeOut(400, function(){loadResources(sceneIndex);});
+    scenesRSdata.ev.trigger('rsBeforeMove', [newState.scene-1])
   });
 
   // Actual on docReady functions
